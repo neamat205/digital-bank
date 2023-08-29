@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/8ef40d0f81.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ////////////////////// Style sheet        ///////////////// -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- ///////////         font       /////////////////// -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto"
+      rel="stylesheet"
+    />
+    <!-- ///////////         script    ////////////////////////////// -->
+
+    <script type="module" src="src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="app hidden">
+      <p class="log__out__timer">
+        You will be log out in <span class="counter">02:00</span>
+      </p>
+      <p class="title">WELCOME ! ❤️ MD. NEAMATULLAH ❤️</p>
+
+      <div class="section__main">
+        <div class="current__balance balance__section">
+          <p class="current__balance__label balance__label">Current balance</p>
+
+          <p class="current__balance__amount balance__amount">2000 BDT</p>
+        </div>
+        <div class="cash__in balance__section">
+          <p class="cash__in__label balance__label">Cash in</p>
+          <p class="cash__in__amount balance__amount">500 BDT</p>
+        </div>
+        <div class="cash__out balance__section">
+          <p class="cash__out__label balance__label">Cash out</p>
+          <p class="cash__out__amount balance__amount">-1000 BDT</p>
+        </div>
+        <ul class="movements__container">
+          <div class="movement__title">
+            <p class="date">15/07/2023</p>
+            <p class="sorting" data-sort="false">&#8595; Sort</p>
+          </div>
+          <div class="movements">
+            <li class="movement deposit">
+              <p class="movement__type">1 DEPOSIT</p>
+              <p class="movement__date">2 DAYS AGO</p>
+              <p class="movement__value">1000 BDT</p>
+            </li>
+            <li class="movement withdrawal">
+              <p class="movement__type">2 WITH...</p>
+              <p class="movement__date">16/01/2024</p>
+              <p class="movement__value">-500 BDT</p>
+            </li>
+          </div>
+        </ul>
+
+        <div class="transfer__operation operation__section">
+          <h4>Transfer money</h4>
+          <form action="" class="transfer__form">
+            <input name="id" value="01521454729" type="text" />
+            <input name="amount" value="4000" type="number" />
+            <input type="submit" value="&#8594;" />
+            <label for="">transfer to</label>
+            <label>Amount</label>
+          </form>
+        </div>
+        <div class="add__money__operatin operation__section">
+          <h4>Add money</h4>
+          <form action="" class="addmoney__form">
+            <input name="amount" value="5000" type="number" />
+            <input name="password" value="123456" type="password" />
+            <input type="submit" value="&#8594;" />
+            <label for="">Amount</label>
+
+            <label>password</label>
+          </form>
+        </div>
+        <div class="close__account operation__section">
+          <h4>Close account</h4>
+          <form action="" class="delete__form">
+            <input name="id" type="text" />
+            <input name="password" type="password" />
+            <input type="submit" value="&#8594;" />
+            <label for="">Confirm user-id</label>
+            <label>Confirm password</label>
+          </form>
+        </div>
+      </div>
+      <button class="log__out__btn">Log Out</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <!--//////////////        Window login   //////////////////-->
+    <div class="window__login hidden"></div>
+    <div class="landing__page">
+      <!-- header -->
+      <div class="nav__overlay hidden"></div>
+      <header class="section header">
+        <div class="nav">
+          <div class="nav__brand">
+            <img class="brand__img" src="src/images/logo.png" />
+            <p class="brand__name">DMT</p>
+          </div>
+          <div class="nav__links">
+            <p class="nav__link" data-section="0">Home</p>
+
+            <p class="nav__link" data-section="1">Features</p>
+            <p class="nav__link" data-section="2">Operations</p>
+            <p class="nav__link" data-section="3">Testimonials</p>
+            <p class="nav__link login__btn">Login</p>
+            <button class="nav__link nav__btn upload__btn">Open account</button>
+          </div>
+          <div class="nav__search">
+            <input
+              class="search__field"
+              type="search"
+              placeholder="Search 🔎"
+            />
+          </div>
+
+          <div class="humberger">
+            <i class="fa fa-thin fa-bars fa-xl" style="color: #000000"></i>
+          </div>
+        </div>
+        <div class="header__title">
+          <div class="title__title">
+            <h1 class="title__heading">When banking meets minimalist</h1>
+            <h3 class="title__sub-heading">
+              A simpler financial experience for a simpler life
+            </h3>
+            <button class="title__btn">Learn more ↓</button>
+          </div>
+          <img class="title__img" src="src/images/dollar.png" />
+        </div>
+      </header>
+      <!-- //////////////////////////////////////////////////// -->
+      <!-- section-1 -->
+      <section class="section section--1" id="section--1">
+        <div class="section__title">
+          <h3>FEATURES</h3>
+          <h2>
+            Everything you need in a moder digital money management and more.
+          </h2>
+        </div>
+        <div class="section__features">
+          <div class="feature">
+            <img
+              class="feature__img order--1"
+              src="src/images/digital.png"
+              alt=""
+            />
+            <div class="feature__feature order--6">
+              <h4>100% Security</h4>
+              <p>
+                Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+                inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+                quibusdam!
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__feature order--2">
+              <h4>100% Digital System</h4>
+              <p>
+                Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+                inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+                quibusdam!
+              </p>
+            </div>
+            <img
+              class="feature__img order--3"
+              src="src/images/growth.png"
+              alt=""
+            />
+          </div>
+
+          <div class="feature">
+            <img
+              class="feature__img order--5"
+              src="src/images/security.png"
+              alt=""
+            />
+
+            <div class="feature__feature order--4">
+              <h4>Watch your money grow</h4>
+              <p>
+                Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+                inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+                quibusdam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ///////////////////////////////////////////////////// -->
+      <!-- section-2 -->
+      <section class="section section--2" id="section--2">
+        <div class="section__title">
+          <h3>OPERATIONS</h3>
+          <h2>Everything as simple as possible, but no simpler.</h2>
+        </div>
+        <div class="section__operations">
+          <div class="operation__btns">
+            <button class="operation__btn operation__btn--1" data-operation="1">
+              01 Instant Transfer
+            </button>
+            <button
+              class="operation__btn operation__btn--2 active__btn"
+              data-operation="2"
+            >
+              02 Instant Loans
+            </button>
+            <button class="operation__btn operation__btn--3" data-operation="3">
+              03 Instant Closing
+            </button>
+          </div>
+          <div class="operation__operations">
+            <div class="operation" data-operation="1">
+              <h5>Tranfser money to anyone, instantly! No fees, no BS.</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="operation active__operation" data-operation="2">
+              <h5>
+                Buy a home or make your dreams come true, with instant payment.
+              </h5>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="operation" data-operation="3">
+              <h5>
+                No longer need your account? No problem! Close it instantly.
+              </h5>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /////////////////////////////////////////////////// -->
+      <!-- section-3 -->
+
+      <section class="section section--3" id="section--3">
+        <div class="section__title">
+          <h3>NOT SURE YET?</h3>
+          <h2>Millions of users are already making their lifes simpler.</h2>
+        </div>
+        <div class="section__testimonials">
+          <button class="testimonial__btn btn__left">
+            <i class="fa fa-thin fa-arrow-left fa-beat"></i>
+          </button>
+          <div class="testimonial">
+            <div class="testimonial__teller">
+              <img class="teller__img" src="src/images/ma.jpg" alt="" />
+              <div class="teller__info">
+                <h4>Muhammad Ali (Ripon)</h4>
+                <p>London, UK</p>
+              </div>
+            </div>
+            <div class="testimonial__testimonial">
+              <h4>Best financial decision ever!</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, numquam corporis et asperiores
+                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                id alias reiciendis, perferendis facere pariatur dolore veniam
+                autem esse non voluptatem saepe provident nihil molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__teller">
+              <img class="teller__img" src="src/images/km.jpg" alt="" />
+              <div class="teller__info">
+                <h4>Freelancer Kawser Mahmud</h4>
+                <p>Barisal, Bangladesh</p>
+              </div>
+            </div>
+            <div class="testimonial__testimonial">
+              <h4>The last step to becoming a complete minimalist</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, numquam corporis et asperiores
+                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                id alias reiciendis, perferendis facere pariatur dolore veniam
+                autem esse non voluptatem saepe provident nihil molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__teller">
+              <img class="teller__img" src="src/images/hr.jpg" alt="" />
+              <div class="teller__info">
+                <h4>Hafizur Rahman</h4>
+                <p>Seoul, South Korea</p>
+              </div>
+            </div>
+            <div class="testimonial__testimonial">
+              <h4>Finally free from old-school money management system</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, numquam corporis et asperiores
+                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                id alias reiciendis, perferendis facere pariatur dolore veniam
+                autem esse non voluptatem saepe provident nihil molestiae.
+              </p>
+            </div>
+          </div>
+
+          <button class="testimonial__btn btn__right">
+            <i
+              class="fa fa-thin fa-arrow-right fa-beat"
+              style="color: #000000"
+            ></i>
+          </button>
+        </div>
+      </section>
+      <footer class="section footer">
+        <h2 class="footer__title">
+          The best day to join DMT was one year ago. The second best is today!
+        </h2>
+
+        <button class="footer__btn upload__btn">
+          Open your free accout toaday
+        </button>
+        <ul class="footer__links">
+          <li>About</li>
+          <li>Pricing</li>
+          <li>Terms of Use</li>
+          <li>Privacy Policy</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+        </ul>
+      </footer>
+    </div>
+    <!-- Modal-window -->
+    <div class="window__upload hidden"></div>
+  </body>
+</html>
